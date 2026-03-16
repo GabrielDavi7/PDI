@@ -46,11 +46,11 @@ plt.axis("off")
 plt.show()
 
 #salva imagem
-output_folder = "SaveImg_question_1"
+output_folder = "save_replies_image"
 os.makedirs(output_folder, exist_ok=True)  
 
-plt.imsave(os.path.join(output_folder, "Maks_IMG.png"), img_1a)
-plt.imsave(os.path.join(output_folder, "Degrade_IMG.png"), img_1b)
-plt.imsave(os.path.join(output_folder, "Merging_IMG.png"), img_1c)
+plt.imsave(os.path.join(output_folder, "question_1_Maks_IMG.png"), img_1a)
+plt.imsave(os.path.join(output_folder, "question_1_Degrade_IMG.png"), img_1b)
+plt.imsave(os.path.join(output_folder, "question_1_Merging_IMG.png"), img_1c)
 
 print("Imagens salvas na pasta:", output_folder)
