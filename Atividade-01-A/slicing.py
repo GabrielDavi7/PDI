@@ -1,9 +1,9 @@
 #1 - fatiamento (slicing)
     #mascara
-
+import os
 import numpy as np
 from PIL import Image
-import matplotlib.pyplot as plt #mostra imagem
+import matplotlib.pyplot as plt
 
 #Gere uma imagem de 200 × 200 pixels com o fundo totalmente preto (valor 0)
 img_1a = np.zeros((200,200,3), dtype=np.uint8)
@@ -44,3 +44,13 @@ plt.imshow(img_1c)
 plt.title("Mesclagem")
 plt.axis("off")
 plt.show()
+
+#salva imagem
+output_folder = "SaveImg_question_1"
+os.makedirs(output_folder, exist_ok=True)  
+
+plt.imsave(os.path.join(output_folder, "Maks_IMG.png"), img_1a)
+plt.imsave(os.path.join(output_folder, "Degrade_IMG.png"), img_1b)
+plt.imsave(os.path.join(output_folder, "Merging_IMG.png"), img_1c)
+
+print("Imagens salvas na pasta:", output_folder)
