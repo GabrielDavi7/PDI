@@ -27,8 +27,26 @@ plt.hist(img_gray_uint8.flatten(), bins=255, range=(0,255), color='gray')
 plt.title(f"Histograma da imagem em tons de cinza: {media_total:.2f}")
 plt.xlabel("Intensidade")
 plt.ylabel("Número de pixels")
-plt.savefig(os.path.join(output_folder, "HistogramaMedia.png"))
+plt.savefig(os.path.join(output_folder, "question_3_HistogramaMedia.png"))
 plt.show()
 plt.close()  # fecha a figura
 
+
+    #Limiarizacao Analitica Automatica:
+
+# Criar máscara binária usando a média como threshold
+mask = np.zeros_like(img_gray_uint8, dtype=np.uint8)
+
+# Define pixels acima ou igual à média como 255 (branco)
+mask[img_gray_uint8 >= media_total] = 255
+
+plt.imshow(mask, cmap='gray')
+plt.title(f"Limiarização automática (Threshold = {media_total:.2f})")
+plt.axis('off')
+plt.show()
+
+
+#salva imagem
+
 plt.imsave(os.path.join(output_folder, "question_3_MediaGray.png"), img_gray_uint8, cmap='gray')
+plt.imsave(os.path.join(output_folder, "question_3_Threshold.png"), mask)
