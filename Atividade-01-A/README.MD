@@ -15,7 +15,7 @@ Você pode instalar todas as dependências rodando o comando abaixo no terminal:
 ```bash
 pip install numpy matplotlib pillow
 ```
-##📁 Estrutura dos Arquivos
+## 📁 Estrutura dos Arquivos
 O projeto está dividido em quatro scripts principais, cada um resolvendo uma etapa específica da atividade:
 ```
 1. slicing.py (Recortes e Mesclas com Matrizes)
@@ -50,7 +50,7 @@ Gera matematicamente um novo fundo contendo um degradê noturno vertical (do pre
 
 Aplica o efeito Chroma Key mesclando o novo fundo na imagem original exatamente na área delimitada pela máscara.
 
-##🚀 Como Executar
+## 🚀 Como Executar
 Clone este repositório ou baixe os arquivos.
 
 Certifique-se de ter uma imagem base para as questões 2, 3 e 4 salva no caminho especificado (por padrão: img/q2_a_original.png).
@@ -65,5 +65,5 @@ python rgb_space.py
 python statistics_threshold.py
 python chroma_key.py
 ```
-##📂 Saída (Outputs)
+## 📂 Saída (Outputs)
 Ao rodar qualquer um dos scripts, o código exibirá as etapas visuais em janelas do Matplotlib. Ao fechar as janelas, as imagens processadas serão automaticamente salvas dentro de uma pasta chamada save_replies_image gerada na raiz do projeto.
