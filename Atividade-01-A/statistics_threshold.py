@@ -49,4 +49,4 @@ plt.show()
 #salva imagem
 
 plt.imsave(os.path.join(output_folder, "question_3_MediaGray.png"), img_gray_uint8, cmap='gray')
-plt.imsave(os.path.join(output_folder, "question_3_Threshold.png"), mask)
+plt.imsave(os.path.join(output_folder, "question_3_Threshold.png"), mask,  cmap='gray')
