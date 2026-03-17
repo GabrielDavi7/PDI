@@ -40,7 +40,7 @@ plt.show()
 
     #Big Red copia foto original(com alfa)
 
-img_red_filter = img_alfa.copy()
+img_red_filter = img_NoAlfa.copy()
 img_red_filter[:, :, [1,2]] = 0 #zera verde e azul
 
 plt.imshow(img_red_filter)

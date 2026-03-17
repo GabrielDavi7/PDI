@@ -28,7 +28,7 @@ y, x, canais = img.shape
 
 new_fundo = np.zeros(img.shape, dtype=img.dtype) # Cria a tela preta
 
-coluna_degrade = np.linspace(0.0, 0.6, y).reshape(-1, 1) #começa no Azul Escuro (0.6) e vai até o Preto (0.0) na altura (y)
+coluna_degrade = np.linspace(0.0, 0.6, y).reshape(-1, 1) #começa no preto (0.0) e vai até o Azul Escuro  (0.6) na altura (y)
 matriz_degrade = np.tile(coluna_degrade, (1,x))
 new_fundo[:, :, 2] = matriz_degrade #aplica degrade somente no rgb azul  
 
