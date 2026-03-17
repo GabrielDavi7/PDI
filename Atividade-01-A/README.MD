@@ -17,31 +17,31 @@ pip install numpy matplotlib pillow
 
 📁 Estrutura dos Arquivos
 O projeto está dividido em quatro scripts principais, cada um resolvendo uma etapa específica da atividade:
-
+```
 1. slicing.py (Recortes e Mesclas com Matrizes)
 Cria uma máscara preta com um quadrado branco central usando fatiamento matricial.
-
+```
 Gera um degradê horizontal (escala de cinza) utilizando np.linspace e np.tile.
 
 Mescla as duas imagens de forma condicional utilizando np.where, exibindo o degradê apenas onde a máscara original é branca.
-
+```
 2. rgb_space.py (Brincando com Canais de Cor)
 Realiza a leitura de uma imagem colorida, removendo o canal Alpha (transparência) caso exista.
-
+```
 Aplica o efeito BGR (inversão de canais) trocando o Vermelho e o Azul de lugar via fatiamento da terceira dimensão.
 
 Cria um filtro vermelho puro zerando matematicamente os canais Verde e Azul.
-
+```
 3. statistics_threshold.py (Cálculos Estatísticos e Limiarização)
 Converte a imagem colorida para tons de cinza extraindo a média dos canais RGB com np.mean().
-
+```
 Calcula a média geral de intensidade de todos os pixels e plota um Histograma de 255 barras.
 
 Realiza uma Limiarização Analítica Automática (Thresholding), usando o valor exato da média como ponto de corte para transformar a imagem em uma matriz puramente preta e branca.
-
+```
 4. chroma_key.py (Efeito Chroma Key)
 Isola uma cor de fundo específica (céu azul) utilizando cálculos de distância absoluta (np.abs) e tolerância para criar uma máscara booleana rigorosa.
-
+```
 Gera matematicamente um novo fundo contendo um degradê noturno vertical (do preto para o azul escuro).
 
 Aplica o efeito Chroma Key mesclando o novo fundo na imagem original exatamente na área delimitada pela máscara.
