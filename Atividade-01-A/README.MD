@@ -14,7 +14,7 @@ Você pode instalar todas as dependências rodando o comando abaixo no terminal:
 
 ```bash
 pip install numpy matplotlib pillow
-
+```
 📁 Estrutura dos Arquivos
 O projeto está dividido em quatro scripts principais, cada um resolvendo uma etapa específica da atividade:
 ```
