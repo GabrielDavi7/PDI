@@ -53,4 +53,3 @@ plt.imsave(os.path.join(output_folder, "question_1_Maks_IMG.png"), img_1a)
 plt.imsave(os.path.join(output_folder, "question_1_Degrade_IMG.png"), img_1b)
 plt.imsave(os.path.join(output_folder, "question_1_Merging_IMG.png"), img_1c)
 
-print("Imagens salvas na pasta:", output_folder)
