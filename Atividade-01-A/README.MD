@@ -59,11 +59,11 @@ Abra o terminal na raiz do projeto.
 
 Execute os scripts individualmente usando o Python. Exemplo:
 
-'''
+```
 python slicing.py
 python rgb_space.py
 python statistics_threshold.py
 python chroma_key.py
-'''
+```
 📂 Saída (Outputs)
 Ao rodar qualquer um dos scripts, o código exibirá as etapas visuais em janelas do Matplotlib. Ao fechar as janelas, as imagens processadas serão automaticamente salvas dentro de uma pasta chamada save_replies_image gerada na raiz do projeto.
